@@ -3,7 +3,7 @@
 
 This simple script solves many problems when working with short sequences of several genes and helps to reconstruct the phylogeny of living organisms.
 
-The input is a set of separate files in the "fasta" format and a csv table with the numbers of reference sequences in the Genbank. At the output, it outputs several filtered alignments (separately for each gene and for all of them, e.g. multigenerational alignment). 
+The input is a set of separate files in the "fasta" format and a csv table with the numbers of reference sequences in the Genbank. At the output, it gives several filtered alignments (separately for each gene and for all of them, e.g. multigenerational alignment). 
 
 How to Use:
 

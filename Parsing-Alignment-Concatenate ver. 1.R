@@ -2,8 +2,11 @@ library(ape)
 library(apex)
 library(ips)
 
+#Set the path to Gblocks
+Gblocks_path = '/Users/user/Apps/Gblocks'
+
 #Set the working directory and parameters
-path = '/Users/user/Library/your/folder/path/here//'
+path = '/Users/user/Library/your/folder/path/here/'
 
 #Set the names of genes and specimens
 GeneList = c("Gene1", "Gene2", "Gene3") #replace "Gene1", "Gene2", "Gene3" with the names of the studied genes
@@ -31,9 +34,9 @@ for (Gene in 1:length(GeneList)) {
 
  #This fork is for different Gblocks settings in different genes
   if (GeneList[Gene] == '16S') {
-    Request_gene = gblocks(Request_gene, b1 = 0.5, b2 = 0.99, b3 = ncol(Request_gene), b4=2, b5 = "a",target = "alignment", '/Users/anisus/Apps2/Gblocks')
+    Request_gene = gblocks(Request_gene, b1 = 0.5, b2 = 0.99, b3 = ncol(Request_gene), b4=2, b5 = "a",target = "alignment", 'Gblocks_path')
   } else {
-    Request_gene = gblocks(Request_gene, b1 = 0.5, b2 = 0.99, b3 = ncol(Request_gene), b4=2, b5 = "a",target = "alignment", '/Users/anisus/Apps2/Gblocks')
+    Request_gene = gblocks(Request_gene, b1 = 0.5, b2 = 0.99, b3 = ncol(Request_gene), b4=2, b5 = "a",target = "alignment", 'Gblocks_path')
   }
   write.dna(Request_gene, file = paste(path, GeneList[Gene],'_all.fa',sep = ''), format = 'fasta')
   Alligment_pathes = c(Alligment_pathes, paste(path, GeneList[Gene],'_all.fa',sep = ''))

@@ -1,5 +1,5 @@
 # Phylogeny
-🧬 R scripts for handling with DNA sequences
+🧬 R scripts for processing DNA sequences
 
 This simple script solves many problems when working with short sequences of several genes and helps to reconstruct the phylogeny of living organisms.
 
